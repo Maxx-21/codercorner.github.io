@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>
+    home page
+       </title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"> 
+    </head>
+    <body>
+<section class="header">
+    <nav>
+        <a href="index.html" ><img src="icon1.png"></a>
+        <div class="nav_links" id="nav_links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>CODER'S CCORNER</h1>
+        <p>coder's corner is my attempt to teach basics and
+            those coding techniques<br> to people in short time
+            which took me months to learn
+        </p>
+        <a href="" class="visit-btn">visit us to know more</a>
+    </div>
+</section>
+<section class="content">
+    <h1>content we have</h1>
+    <p></p>
+    <div class="row">
+        <div class="col">
+            <h3>intermediate</h3>
+            <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lBjP5tppOks" title="YouTube video player" alt="" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dIOO3iWD8Xo" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    var nav_links =document.getElementById("nav_links");
+    function showMenu(){
+        nav_links.style.right="0";
+    }
+    function hideMenu(){
+        nav_links.style.right="-200px";
+    }
+</script>
+    </body>
+</html>
